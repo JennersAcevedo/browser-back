@@ -16,7 +16,7 @@ export class AppController {
       })
     } catch (err: any) {
       return response.status(HttpStatus.BAD_REQUEST).json({
-        "success": true,
+        "success": false,
         "data": {},
         "reason": "Invalid Params. Try again later"
       })
@@ -33,9 +33,9 @@ export class AppController {
         "reason": ""
       })
     } catch (err: any) {
-      console.log(err)
+    
       return response.status(HttpStatus.BAD_REQUEST).json({
-        "success": true,
+        "success": false,
         "data": {},
         "reason": "Invalid Params. Try again later"
       })
@@ -52,7 +52,7 @@ export class AppController {
       })
     } catch (err: any) {
       return response.status(HttpStatus.BAD_REQUEST).json({
-        "success": true,
+        "success": false,
         "data": {},
         "reason": "Invalid Params. Try again later"
       })
@@ -69,8 +69,9 @@ export class AppController {
         "reason": ""
       })
     } catch (err: any) {
+      
       return response.status(HttpStatus.BAD_REQUEST).json({
-        "success": true,
+        "success": false,
         "data": {},
         "reason": "Invalid Params. Try again later"
       })
