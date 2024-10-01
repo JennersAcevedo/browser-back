@@ -48,6 +48,6 @@ export class AppService {
     return dataResponse
   }
   async deleteBrowser(){
-    await this.browserModel.destroy()
+    await this.browserModel.truncate()
   }
 }
